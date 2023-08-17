@@ -8,7 +8,7 @@ const RestaurantCard = ({item}) => {
   const navigation = useNavigation()
 
   return (
-    <TouchableWithoutFeedback onPress={()=>{navigation.navigate('Restaurant',{...restaurant})}}>
+    <TouchableWithoutFeedback onPress={()=>{navigation.navigate('Restaurant',{...item})}}>
         <View style={{shadowColor: themeColors.bgColor(0.2), shadowRadius: 7}} className="mr-6 bg-white rounded-3xl shadow-2xl">
             <Image  className="h-36 w-64 rounded-t-3xl" source={item.image} />
             <View className="px-3 pb-4 space-y-2">
