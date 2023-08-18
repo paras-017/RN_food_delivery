@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
+import { View, Text, ScrollView, Image, TouchableOpacity, StatusBar } from 'react-native'
 import React from 'react'
 import { useNavigation, useRoute } from '@react-navigation/native'
 import * as Icon from "react-native-feather";
@@ -14,6 +14,7 @@ const RestaurantScreen = () => {
   return (
     <View>
       <CartIcon/>
+      <StatusBar style='light'/>
       <ScrollView>
         <View className='relative'>
           <Image className='w-full h-72' source={item.image}/>
